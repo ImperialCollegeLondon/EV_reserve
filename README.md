@@ -1,4 +1,4 @@
-# Reserve Provision from Electric Vehicles: Aggregate Boundaries and Stochastic Model Predictive Control
+# Reserve Provision from Electric Vehicles: Aggregate Boundaries and Stochastic Model Predictive Control 
 
 The code in this repository simulates a Stochastic Model Predictive Control (SMPC) algorithm for an aggregate electric vehicle (EV) fleet. The algorithm was proposed as part of a journal submission for which a [preprint](https://doi.org/10.48550/arXiv.2406.07454) has been made available.
 
