@@ -3,7 +3,7 @@ import pandas as pd
 from b_add_EVdata import csv2g_final3
 
 #this is a one-time random seed of all the charger numbers that are included in the DfT EV dataset
-thldf = pd.read_csv('../Raw data/random_charger_seed1.csv')
+thldf = pd.read_csv('random_charger_seed1.csv')
 trialhardlist = list(thldf.columns.values)
 
 def pickXoutofHList(indata,samplesize,hlist):
