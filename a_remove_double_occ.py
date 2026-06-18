@@ -3,7 +3,7 @@ import pandas as pd
 import piso
 import auxfunc_data as ctf
 
-csv_in = pd.read_csv('chargepoint analysis.csv')
+csv_in = pd.read_csv('Raw data/chargepoint analysis.csv')
 
 csv_int1 = ctf.add_pdtime(csv_in) #adds column with pandas time
 csv_int2 = ctf.remove48(csv_int1,336) #any charging process that lasts longer than two weeks is removed
@@ -18,4 +18,4 @@ for i in csv_int2['CPID'].unique():
 csv_out = csv_int2.drop(csv_int2[(csv_int2['isOverlap'] == 1)].index)
 
 #resave
-csv_out.to_csv("../Raw data/chargepoint analysis wo doubles.csv")
+csv_out.to_csv("Raw data/chargepoint analysis wo doubles.csv")
