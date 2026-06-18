@@ -98,11 +98,11 @@ def aggfunction(trial,end_dir_cha_perc = 0.8, end_dir_cha_power_perc = 0.5):
 
     #6. price data
     #from fP4_pricedata import pricelist #not the quickest way to do this
-    priceseries = pd.read_csv("../Raw data/wholesaleprice.csv",header=None)[0]
+    priceseries = pd.read_csv("Raw data/wholesaleprice.csv",header=None)[0]
 
     #7. weather data
-    temp_df = pd.read_excel('../Raw data/metoffice_hadcet_data_meantemp_daily_2017.xlsx')
-    precip_df = pd.read_excel('../Raw data/metoffice_hadukp_data_daily_HadEWP_daily_totals_2017.xlsx')
+    temp_df = pd.read_excel('Raw data/metoffice_hadcet_data_meantemp_daily_2017.xlsx')
+    precip_df = pd.read_excel('Raw data/metoffice_hadukp_data_daily_HadEWP_daily_totals_2017.xlsx')
     temp_ser= pd.Series(temp_df.loc[0:365,'Value'].repeat(48).values)
     precip_ser = pd.Series(precip_df.loc[0:365,'Value'].repeat(48).values)
 
