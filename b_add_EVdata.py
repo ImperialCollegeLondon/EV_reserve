@@ -2,7 +2,7 @@ import pandas as pd
 
 import auxfunc_data as ctf
 
-csv_in = pd.read_csv('../Raw data/chargepoint analysis wo doubles.csv') # previously "chargepoint analysis"
+csv_in = pd.read_csv('chargepoint analysis wo doubles.csv') # previously "chargepoint analysis"
 
 #for implementation with cleaned file
 csv_in2 = csv_in.drop(columns=['StartPd', 'EndPd'])
