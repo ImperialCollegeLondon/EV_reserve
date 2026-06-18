@@ -3,7 +3,7 @@ import pandas as pd
 import piso
 import auxfunc_data as ctf
 
-csv_in = pd.read_csv('C:/Users/jt3022/OneDrive - Imperial College London/Output/Projects/2. EV SMPC/3. Methodology/Data/Raw EV/chargepoint analysis.csv')
+csv_in = pd.read_csv('chargepoint analysis.csv')
 
 csv_int1 = ctf.add_pdtime(csv_in) #adds column with pandas time
 csv_int2 = ctf.remove48(csv_int1,336) #any charging process that lasts longer than two weeks is removed
