@@ -128,7 +128,7 @@ def run_conti_SMPC_nzb_AVg_wMILP_GUROB_noEVs(df_tr,df_te,distr_list_S1,distr_lis
     dfcsv['UBc'] = df_te.loc[12240:final_settl,'UBc'].values
     dfcsv['Power'] = df_te.loc[12240:final_settl,'Power'].values
     dfcsv['Price'] = df_te.loc[12240:final_settl,'Price'].values
-    dfcsv.to_csv("../noEV_results/" + str(filename) + ".csv")
+    dfcsv.to_csv(str(filename) + ".csv")
 
     #s11 = fso.optS1(256, distr_list_S1, df_te, [s1_forecasts[i][0] for i in range(3)], s1_scen_pred)
     #s12 = fso.optS2(256,28,df_te,distr_list_S2,[s2_forecasts[28][i][0] for i in range(3)], s2_scen_pred[28])
@@ -256,7 +256,7 @@ def run_conti_SMPC_nzb_AVg_wMILP_GUROB_noEVs_BM1a(df_tr,df_te,distr_list_S1,dist
     
     #dfcsv.to_csv("C:/Users/jt3022/OneDrive - Imperial College London/Output/Projects/2. EV SMPC/4. Results/fP7/" + str(filename) + ".csv")
 
-    dfcsv.to_csv("../noEV_results/detpred1a" + str(filename) + ".csv")
+    dfcsv.to_csv("detpred1a" + str(filename) + ".csv")
     #s11 = fso.optS1(256, distr_list_S1, df_te, [s1_forecasts[i][0] for i in range(3)], s1_scen_pred)
     #s12 = fso.optS2(256,28,df_te,distr_list_S2,[s2_forecasts[28][i][0] for i in range(3)], s2_scen_pred[28])
 
@@ -374,10 +374,8 @@ def run_conti_SMPC_nzb_AVg_wMILP_GUROB_noEVs_BM1b(df_tr,df_te,distr_list_S1,dist
     dfcsv['UBc'] = df_te.loc[12240:final_settl,'UBc'].values
     dfcsv['Power'] = df_te.loc[12240:final_settl,'Power'].values
     dfcsv['Price'] = df_te.loc[12240:final_settl,'Price'].values
-    
-    #dfcsv.to_csv("C:/Users/jt3022/OneDrive - Imperial College London/Output/Projects/2. EV SMPC/4. Results/fP7/" + str(filename) + ".csv")
 
-    dfcsv.to_csv("../noEV_results/perffore1b" + str(filename) + ".csv")
+    dfcsv.to_csv("perffore1b" + str(filename) + ".csv")
     #s11 = fso.optS1(256, distr_list_S1, df_te, [s1_forecasts[i][0] for i in range(3)], s1_scen_pred)
     #s12 = fso.optS2(256,28,df_te,distr_list_S2,[s2_forecasts[28][i][0] for i in range(3)], s2_scen_pred[28])
 
